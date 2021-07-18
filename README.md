@@ -1,2 +1,2 @@
 # udacity-aws-cloud-architect-nanodegree
-Project files for the udacity cloud architect nano-degree with aws
+Project files for the udacity AWS cloud architect Nanodegree
