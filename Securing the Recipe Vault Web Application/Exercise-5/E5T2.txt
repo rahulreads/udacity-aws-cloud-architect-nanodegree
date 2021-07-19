@@ -1,0 +1,35 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+terrascan https://github.com/accurics/terrascan
+Terrafirma https://github.com/wayfair/terrafirma
+
+### Example vulnerability
+Terraform Iinter :  S3 bucket Access is allowed to all AWS Account Users.
+Terrafirma: SSH open to the Internet
+
+##Scan AMI’s or containers for OS vulnerabilities
+clair: https://github.com/quay/clair
+
+### Example vulnerability
+Got results from Clair API v3
+Found 488 vulnerabilities
+Unknown: 22
+Negligible: 181
+Low: 150
+Medium: 113
+High: 22
+
+CVE-2017-12424: [High]
+
+Found in: shadow [1:4.4-4.1]
+
+Fixed By:
+In shadow before 4.5, the newusers tool could be made to manipulate internal data structures in ways unintended by the authors. Malformed input may lead to crashes (with a buffer overflow or other memory corruption) or other unspecified behaviors. This crosses a privilege boundary in, for example, certain web-hosting environments in which a Control Panel allows an unprivileged user account to create subaccounts.
+https://security-tracker.debian.org/tracker/CVE-2017-12424
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+AWStealth: https://github.com/cyberark/SkyArk/tree/master/AWStealth
+
+### Example vulnerability
+Unsecured privileged users - no MFA and no constrained permission condition

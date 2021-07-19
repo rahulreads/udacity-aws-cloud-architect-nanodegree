@@ -1,0 +1,22 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+# Poor practice 1
+Based on a EC2 instance CloudFormation provisioning template, IAM Role (InstanceRole) is assigned
+to both RecipeWebServiceInstance and AttackInstance. The access to s3 bucket resources for
+these two instances has to configured via separate roles with only required permissions for those buckets.
+
+# Poor practice 2
+IAM Role can access all S3 buckets, this violates least privilege principle. Roles should be specific to the list of resources and actions
+performed upon them.
+
+# Poor practice 3
+For the VPC configuration, all the route definitions have DestinationCidrBlock defined as 0.0.0.0/0.
+This can give attackers advantage in case of a security breach.
+
+# Poor practice 4
+The WebAppSG, AppLoadBalancerSG, AttackInstanceSG have both ingress and egress rules
+CidrIp as 0.0.0.0/0.
+
+# Poor practice 5
+WebAppSG has 5000 and 8080 ports opened. This provides HTTP base communication. As a publicly facing
+instance, it should be configured with 443 port for HTTPS based  communications.
