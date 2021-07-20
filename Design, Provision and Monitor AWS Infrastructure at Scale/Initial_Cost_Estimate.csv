@@ -1,0 +1,17 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,AWS GovCloud (US-East),,Amazon EC2,0,876.58,10518.96,USD,"Operating system (Linux), Quantity (6), Pricing strategy (On-Demand Instances), Storage amount (30 GB), Instance type (t3.xlarge)"
+My Estimate,AWS GovCloud (US-East),,Application Load Balancer,0,1047.36,12568.32,USD,Number of Application Load Balancers (1)
+My Estimate,AWS GovCloud (US-East),,Network Load Balancer,0,717.23,8606.76,USD,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (150 GB per hour), Average number of new TCP connections (1000 per second), Average TCP connection duration (10 seconds), Processed bytes per NLB for UDP (10 GB per hour)"
+My Estimate,AWS GovCloud (US-East),,S3 Standard,0,399.36,4792.32,USD,S3 Standard storage (10 TB per month)
+My Estimate,AWS GovCloud (US-East),,Data Transfer,0,634.725,7616.7,USD,"DT Inbound: Internet (0 TB per month), DT Outbound: Internet (4 TB per month)"
+My Estimate,AWS GovCloud (US-East),,Amazon Aurora PostgreSQL-Compatible DB,0,1618.73,19424.76,USD,"Storage amount (10 TB), Quantity (2), Instance type (db.t3.large), Pricing strategy (OnDemand)"
+My Estimate,AWS GovCloud (US-East),,Amazon Virtual Private Cloud (VPC),0,442.9,5314.8,USD,"Working days per month (22), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month), Number of subnet associations (1), Number of Site-to-Site VPN Connections (2)"
+My Estimate,AWS GovCloud (US-East),,Amazon Virtual Private Cloud (VPC),0,521.2,6254.4,USD,Number of NAT Gateways (2)
+My Estimate,AWS GovCloud (US-East),,Amazon CloudWatch,0,45.3096,543.72,USD,"Number of Metrics (includes detailed and custom metrics) (100), GetMetricData: Number of metrics requested (100), Number of other API requests (100), Standard Logs: Data Ingested (20 GB), Logs Delivered to S3: Data Ingested (5 GB)"
+My Estimate,US East (Ohio),,Amazon Route 53,0,1868.5,22422,USD,"Hosted Zones (2), Basic Checks Within AWS (100), Number of Elastic Network Interfaces (10)"
+My Estimate,AWS GovCloud (US-East),,Amazon EC2,0,915.12,10981.44,USD,"Operating system (Linux), Quantity (6), Pricing strategy (On-Demand Instances), Storage amount (30 GB), Instance type (c5.xlarge)"
+,,,,,,,,
+,,,,Total,9087.0146,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
